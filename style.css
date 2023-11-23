@@ -1,0 +1,36 @@
+body{
+    background-color: aqua;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#pr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .products {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 300px; 
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thumbnail {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .products:nth-child(odd) {
+    clear: left;
+  }
+  
