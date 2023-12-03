@@ -41,4 +41,35 @@ nav a:hover {
   color: #ff6347;
 }
 
-  
+h2 {
+  color: blue;
+  font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+  color: red;
+}
+
+.thumbnail,
+.product-image {
+  max-width: 150px; 
+  height: auto;
+  display: inline-block;
+  margin: 5px;
+}
+
+.product-details {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product-images {
+  text-align: left; 
+}
+
+.product-images img {
+  max-width: 150px; 
+  height: auto;
+  margin: 5px;
+}
+

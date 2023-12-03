@@ -34,7 +34,7 @@ function displayProducts(products) {
 }
 
 function ToDetails(productId) {
-  window.location.href = `pr_details.html?id=${productId}`;
+  window.location.href = `pr_details.html?productId=${productId}`;
 }
 
 const search = document.getElementById('search');
