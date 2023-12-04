@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
   
       const detailsHtml = `
         <h2>${productDetails.title}</h2>
-        <p>Description: ${productDetails.description}</p>
-        <p>Price: ${productDetails.price}$</p>
-        <p>Rating: ${productDetails.rating}</p>
-        <p>Discount: ${productDetails.discountPercentage}%</p>
-        <p>Brand: ${productDetails.brand}</p>
-        <p>Category: ${productDetails.category}</p>
-        <p>Stock: ${productDetails.stock}</p>
+        <p><span>Description:</span> ${productDetails.description}</p>
+        <p><span>Price:</span> ${productDetails.price}$</p>
+        <p><span>Rating:</span> ${productDetails.rating}</p>
+        <p><span>Discount:</span> ${productDetails.discountPercentage}%</p>
+        <p><span>Brand:</span> ${productDetails.brand}</p>
+        <p><span>Category:</span> ${productDetails.category}</p>
+        <p><span>Stock:</span> ${productDetails.stock}</p>
         <img src="${productDetails.thumbnail}" alt="Thumbnail" class="thumbnail">
         <div class="product-images">${imagesHtml}</div>
       `;
