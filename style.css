@@ -17,10 +17,10 @@ h1 {
 }
 
 nav {
-  background-color:#333;
+  background-color: #333;
   color: white;
   padding: 10px;
-  text-align: center; 
+  text-align: center;
 }
 
 nav ul {
@@ -35,16 +35,15 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  padding: 8px 15px; 
-  border-radius: 5px; 
-  transition: background-color 0.3s ease; 
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
   background-color: #ff6347;
-  color: #fff; 
+  color: #fff;
 }
-
 
 #srch {
   text-align: center;
@@ -72,9 +71,11 @@ nav a:hover {
   padding: 15px;
   margin: 15px;
   width: 250px;
+  height: 430px; 
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
   transition: transform 0.3s ease;
 }
 
@@ -84,6 +85,7 @@ nav a:hover {
 
 .thumbnail {
   max-width: 100%;
+  max-height: 200px; 
   height: auto;
 }
 
@@ -106,7 +108,6 @@ nav a:hover {
   background-color: #ff6347;
 }
 
-
 #pagination {
   display: flex;
   justify-content: center;
@@ -128,10 +129,23 @@ nav a:hover {
   background-color: #ff6347;
 }
 
-span{
+span {
   color: darkblue;
 }
 
-p{
-  color: red
+p {
+  color: red;
+}
+
+#categoryFilter {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+#pagination button.active {
+  background-color: #ff6347;
+  color: #fff;
 }

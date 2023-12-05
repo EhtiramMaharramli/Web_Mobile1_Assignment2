@@ -16,6 +16,7 @@ function fetchData() {
       dummy_products = data.products;
       displayProducts(dummy_products);
       displayPagination();
+      displayCategories();
     })
     .catch(error => {
       console.error(error);
@@ -40,6 +41,7 @@ function displayProducts(products) {
   ).join("");
 
   document.querySelector('#pr').innerHTML = html;
+  
 }
 
 function displayPagination() {
@@ -55,6 +57,11 @@ function displayPagination() {
       currentPaginationPage = i;
       fetchData();
     });
+
+    if (i === currentPaginationPage) {
+      pageButton.classList.add('active');
+    }
+    
     paginationContainer.appendChild(pageButton);
   }
 }
@@ -71,5 +78,21 @@ search.addEventListener('input', (e) => {
   });
   displayProducts(filteredProducts);
 });
+
+
+function displayCategories() {
+  const categories = [...new Set(dummy_products.map(product => product.category))];
+  const categoryFilterDropdown = document.getElementById('categoryFilter');
+
+  categoryFilterDropdown.innerHTML = '<option value="all">All Categories</option>';
+  categories.forEach(category => categoryFilterDropdown.innerHTML += `<option value="${category}">${category}</option>`);
+}
+
+function filterByCategory() {
+  const selectedCategory = document.getElementById('categoryFilter').value;
+  const filteredProducts = (selectedCategory === 'all') ? dummy_products : dummy_products.filter(product => product.category === selectedCategory);
+  displayProducts(filteredProducts);
+}
+
 
 fetchData();
