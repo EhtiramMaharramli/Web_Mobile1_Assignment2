@@ -13,3 +13,6 @@
 •	Pagination: Navigate through multiple pages of products if the total number of products exceeds 10.
 •	Product details: Click on a product in order to see a page with detailed information about that product.
 
+# Live Page:
+https://ehtirammaharramli.github.io/Web_Mobile1_Assignment2/
+
